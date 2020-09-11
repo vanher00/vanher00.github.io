@@ -1,0 +1,127 @@
+/*top navigation bar*/
+.nav{
+    background-color: lavender
+}
+
+.nav ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li{
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid;
+    border-bottom-color: blue;
+}
+
+.nav a {
+    text-decoration:none;
+    color: blue;
+    display: block;
+}
+
+.nav a:hover{
+    background-color: lightskyblue;
+}
+
+.nav a:active{
+    color: darkblue;
+}
+
+@media screen and (min-width: 600px)
+{
+    .nav li{
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 15px;
+    }
+    
+    .nav li{
+        display: inline-block;
+    }
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: monospace;
+}
+
+h1{
+    font-family: serif;
+    color: pink;
+    text-align: center;
+}
+
+/*image gallery*/
+img{
+    width: 100%;
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column{
+    width: 33.33%;
+}
+
+@media (max-width: 800px)
+{
+    .column{
+        width: 50%
+    }
+}
+
+@media (max-width: 600px)
+{
+    .column{
+        width: 100%
+    }
+}
+
+/*homepage logo*/
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33.33%;
+}
+
+.internship-title{
+    color: blue
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
