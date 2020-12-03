@@ -3,23 +3,27 @@
     <head>
         <meta charset="utf-8">
         <title>Vanessa Hernandez</title>
-        <link href="style.css" rel="stylesheet">   
+        <link href="style.css" rel="stylesheet">  
+        <script src="script.js"></script> 
     </head>
     
     <body>
-        <div class="nav">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">hello</a></li>
-                <li><a href="image-gallery.html">gallery</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </div>
-        
-        <div class="logo">
-            <img src="images/Placeholder-Frog.png" alt="placeholder logo">
-        </div>
-        
+        <div class="topnav" id="myTopnav">
+           <a class="logo" href="index.html"><img src="images/Placeholder-Frog.png">
+           </a>
+            <a href="index.html" class="active">home</a>
+            <a href="about.html">hello</a>
+            <div class="dropdown">
+                <button class="dropbtn">experience
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="image-gallery.html">gallery</a>
+                    <a href="internships.html">internships</a>
+                </div>
+            </div>
+            <a href="script:void(0)" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>       
         <h1>welcome!</h1>
         
         <p>hello there! welcome to my cozy space :) </p>

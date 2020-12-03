@@ -4,20 +4,31 @@
         <meta charset="utf-8">
         <title>hello</title>
         <link href="style.css" rel="stylesheet">
+        <script src="script.js"></script> 
     </head>
     
     <body>
-        <div class="nav">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">hello</a></li>
-                <li><a href="image-gallery.html">gallery</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
+        <div class="topnav" id="myTopnav">
+            <a class="logo" href="index.html"><img src="images/Placeholder-Frog.png">
+           </a>
+            <a href="index.html">home</a>
+            <a href="about.html" class="active">hello</a>
+            <div class="dropdown">
+                <button class="dropbtn">experience
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="image-gallery.html">gallery</a>
+                    <a href="internships.html">internships</a>
+                </div>
+            </div>
+            <a href="script:void(0)" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
         
-        <h1>hello!</h1>
-        <p>I'm Vanessa Hernandez! I am an Atlanta native who enjoys doing fun creative things! Some of my hobbies include learning new langauges, painting, and listening to music. I also like to spend my free time playing animal crossing or chilling with my cats.</p>
+        <h1 class="abouttitle">hello friends!</h1>
+        <p class="me">
+            I'm Vanessa!! I'm an Atlanta native who enjoys doing fun creative things. Some of my hobbies include learning new langauges, painting, and listening to music. I also like to spend my free time playing animal crossing or chilling with my cats.
+        </p>
         
         <p class="education">
             High School Diploma| Gwinnett School of Mathematics, Science, and Technology<br>
@@ -30,6 +41,14 @@
             Beofre transferring to Georgia Tech, I attended GGC and refined my skills programming. 
             
         </p>
+        
+        <h1>contact info</h1>
+        <p>The best way you can get in touch with me is through e-mail. You can send me a message to my school email:</p>
+        <p>Email: vhernandez34@gatech.edu</p>
+        
+        <img src="images/Trex.png" class="cats">
+        <img src="images/Berlioz.png" class="cats">
+        <img src="images/Coco.png" class="cats">
         
     </body>
 </html>
