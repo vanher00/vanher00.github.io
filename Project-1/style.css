@@ -76,7 +76,7 @@
 }
 
 /*only shows home and icon*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -87,7 +87,7 @@
 }
 
 /*displays the hidden links when icon is clicked*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -169,14 +169,14 @@ img{
     width: 33.33%;
 }
 
-@media (max-width: 850px)
+@media (max-width: 800px)
 {
     .imagecolumn{
         width: 50%
     }
 }
 
-@media (max-width: 7500px)
+@media (max-width: 600px)
 {
     .imagecolumn{
         width: 100%
