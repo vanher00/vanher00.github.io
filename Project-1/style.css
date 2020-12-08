@@ -76,7 +76,7 @@
 }
 
 /*only shows home and icon*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -87,7 +87,7 @@
 }
 
 /*displays the hidden links when icon is clicked*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -148,7 +148,7 @@
 }
 
 /* Responsive layout- makes the three columns stack on top of each other instead of next to each other*/
-@media screen and (max-width:600px) {
+@media screen and (max-width:750px) {
     .column {
         width: 100%;
     }
@@ -169,14 +169,14 @@ img{
     width: 33.33%;
 }
 
-@media (max-width: 800px)
+@media (max-width: 850px)
 {
     .imagecolumn{
         width: 50%
     }
 }
 
-@media (max-width: 600px)
+@media (max-width: 7500px)
 {
     .imagecolumn{
         width: 100%
