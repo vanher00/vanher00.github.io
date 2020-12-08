@@ -3,30 +3,46 @@
     <head>
         <meta charset="utf-8">
         <title>Vanessa Hernandez</title>
-        <link href="style.css" rel="stylesheet">  
+        <link href="style.css" rel="stylesheet"> 
         <script src="script.js"></script> 
     </head>
     
     <body>
-       <a class="logo" href="index.html"><img src="images/logo.png">
-           </a>
-        <div class="topnav" id="myTopnav">
-            <a href="index.html">home</a>
-            <a href="about.html" class="active">hello</a>
-            <div class="dropdown">
-                <button class="dropbtn">experience
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="image-gallery.html">gallery</a>
-                    <a href="internships.html">internships</a>
+      <div id="page-container">
+          <div id="conent-wrap">
+              <a class="logo" href="index.html"><img src="images/logo.png"></a>
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html">home</a>
+                    <a href="about.html">hello</a>
+                <div class="dropdown">
+                    <button class="dropbtn">experience
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="image-gallery.html">gallery</a>
+                        <a href="internships.html">internships</a>
+                    </div>
+                </div>
+                <a href="random.html">skills</a>
+                <a href="script:void(0)" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>     
+        
+            <div class="row">
+                <div class="column" id="intro">
+                   <h2>Hello there!</h2>
+                    <p>Welcome to my cozy space! Feel free to browse my website and get to know me a little more. Have fun!</p>
+                    <p>Find me on</p><a href="https://www.linkedin.com/in/vanessa-hernandez00">LinkedIn!</a>
+                </div>
+                <div class="column">
+                    <img src="images/Me.png">
                 </div>
             </div>
-            <a href="random.html">surprise</a>
-            <a href="script:void(0)" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>     
-        <h1>welcome!</h1>
-        
-        <p>hello there! welcome to my cozy space :) </p>
+        </div>
+        <footer id="footer">
+                <h3>contact info</h3>
+                <p>The best way you can get in touch with me is through e-mail. You can send me a message to my school email:</p>
+                <p>Email: vhernandez34@gatech.edu</p>
+        </footer>  
+      </div>
     </body>
 </html>

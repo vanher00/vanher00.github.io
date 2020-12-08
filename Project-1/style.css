@@ -1,8 +1,22 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#content-wrap {
+    padding: bottom: 8.5rem;
+}
 
 .topnav {
   background-color: lavender;
   overflow: hidden;
-  font-family: sans-serif;
 }
 
 .topnav a {
@@ -13,11 +27,6 @@
   padding: 14px 55px;
   text-decoration: none;
   font-size: 20px;
-}
-
-.active {
-  background-color: lightskyblue;
-  color: blue;
 }
 
 .topnav .icon {
@@ -97,6 +106,52 @@
     width: 100%;
     text-align: left;
   }
+
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.seccolumn {
+    float: left;
+    width: 33.33%%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+@media (min-width: 800px)
+{
+    .seccolumn{
+        width: 33.33%
+    }
+}
+/*clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#intro {
+    align-content: center;
+    background-color: lavenderblush;
+    color: blue;
+    text-align: center;
+    display: block;
+    padding: 0px;
+}
+
+/* Responsive layout- makes the three columns stack on top of each other instead of next to each other*/
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
 }
 
 /*image gallery*/
@@ -110,10 +165,23 @@ img{
     flex-wrap: wrap;
 }
 
-.column{
+.imagecolumn{
     width: 33.33%;
 }
 
+@media (max-width: 800px)
+{
+    .imagecolumn{
+        width: 50%
+    }
+}
+
+@media (max-width: 600px)
+{
+    .imagecolumn{
+        width: 100%
+    }
+}
 /*homepage logo*/
 .logo{
     display: block;
@@ -122,18 +190,79 @@ img{
     width: 33.33%;
 }
 
+
+.education {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    background-color: lavenderblush;
+    margin-top: 35px;
+}
+
+.scroll {
+    color: blue;
+    font-size: 23px;
+    text-align: center;
+    background-color: lavenderblush;
+    margin-top: 150px;
+}
+
 .internship-title{
-    color: blue
+    color: blue;
 }
 
-.cats{
-    max-width: 25%
+.experience {
+    background-color: lavenderblush;
+    float: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 45px;
+    margin-left: 45px;
+    margin-right:45px;
+    margin-bottom: 45px;
 }
 
+.skills {
+    background-color: lavenderblush;
+    float: center;
+    text-align: left;
+    padding: 20px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
 
+h1 {
+    color: blue;
+    text-align: center;
+    padding: 10px;
+}
 
+h3 {
+    
+    color: blue;
+    text-align: center;
+}
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 8.5rem;
+    background-color: lavender;
+    text-align: center;
+    color: blue;
+}
 
-
+#lowfooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8.5rem;
+    background-color: lavender;
+    text-align: center;
+    color: blue;
+}
 
 
 
