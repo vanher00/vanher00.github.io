@@ -1,157 +1,63 @@
-* {
-    box-sizing: border-box;
-    font-family: sans-serif;
+/*top navigation bar*/
+.nav{
+    background-color: lavender
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-#content-wrap {
-    padding: bottom: 8.5rem;
-}
-
-.topnav {
-  background-color: lavender;
-  overflow: hidden;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: blue;
-  text-align: center;
-  padding: 14px 55px;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 20px;
-  border: none;
-  outline: none;
-  color: blue;
-  padding: 14px 55px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: lavender;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: blue;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.topnav a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover {
-  background-color: lightskyblue;
-  color: blue;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/*only shows home and icon*/
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-/*displays the hidden links when icon is clicked*/
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-
-}
-
-.column {
-    float: left;
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.seccolumn {
-    float: left;
-    width: 33.33%%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-@media (min-width: 800px)
-{
-    .seccolumn{
-        width: 33.33%
-    }
-}
-/*clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#intro {
-    align-content: center;
-    background-color: lavenderblush;
-    color: blue;
+.nav ul{
+    list-style: none;
     text-align: center;
-    display: block;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
 }
 
-/* Responsive layout- makes the three columns stack on top of each other instead of next to each other*/
-@media screen and (max-width:750px) {
-    .column {
-        width: 100%;
+.nav li{
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid;
+    border-bottom-color: blue;
+}
+
+.nav a {
+    text-decoration:none;
+    color: blue;
+    display: block;
+}
+
+.nav a:hover{
+    background-color: lightskyblue;
+}
+
+.nav a:active{
+    color: darkblue;
+}
+
+@media screen and (min-width: 600px)
+{
+    .nav li{
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 15px;
     }
+    
+    .nav li{
+        display: inline-block;
+    }
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: monospace;
+}
+
+h1{
+    font-family: serif;
+    color: pink;
+    text-align: center;
 }
 
 /*image gallery*/
@@ -165,23 +71,24 @@ img{
     flex-wrap: wrap;
 }
 
-.imagecolumn{
+.column{
     width: 33.33%;
 }
 
 @media (max-width: 800px)
 {
-    .imagecolumn{
+    .column{
         width: 50%
     }
 }
 
 @media (max-width: 600px)
 {
-    .imagecolumn{
+    .column{
         width: 100%
     }
 }
+
 /*homepage logo*/
 .logo{
     display: block;
@@ -190,79 +97,22 @@ img{
     width: 33.33%;
 }
 
-
-.education {
-    color: black;
-    font-size: 15px;
-    text-align: center;
-    background-color: lavenderblush;
-    margin-top: 35px;
-}
-
-.scroll {
-    color: blue;
-    font-size: 23px;
-    text-align: center;
-    background-color: lavenderblush;
-    margin-top: 150px;
-}
-
 .internship-title{
-    color: blue;
+    color: blue
 }
 
-.experience {
-    background-color: lavenderblush;
-    float: center;
-    text-align: center;
-    padding: 20px;
-    margin-top: 45px;
-    margin-left: 45px;
-    margin-right:45px;
-    margin-bottom: 45px;
-}
 
-.skills {
-    background-color: lavenderblush;
-    float: center;
-    text-align: left;
-    padding: 20px;
-    margin-top: 45px;
-    margin-bottom: 45px;
-    margin-left: 45px;
-    margin-right: 45px;
-}
 
-h1 {
-    color: blue;
-    text-align: center;
-    padding: 10px;
-}
 
-h3 {
-    
-    color: blue;
-    text-align: center;
-}
-#footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 8.5rem;
-    background-color: lavender;
-    text-align: center;
-    color: blue;
-}
 
-#lowfooter {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 8.5rem;
-    background-color: lavender;
-    text-align: center;
-    color: blue;
-}
+
+
+
+
+
+
+
+
 
 
 
